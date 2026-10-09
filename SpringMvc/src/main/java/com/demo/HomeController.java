@@ -13,6 +13,16 @@ public class HomeController {
         User user = new User();
         user.setName("Dr. Vinay Singhal CSE");
         user.setEmail("vinay@example.com");
+        user.setAge(39);
+        model.addAttribute("user", user);
+        return "home"; 
+    }
+	
+	@GetMapping("/hi")
+    public String showHi(Model model) {
+        User user = new User();
+        user.setName("Example Name");
+        user.setEmail("abc@example.com");
         model.addAttribute("user", user);
         return "home"; 
     }

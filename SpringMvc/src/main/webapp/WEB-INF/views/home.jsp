@@ -10,6 +10,7 @@
 <h1>This is Home JSP</h1>
 <p>Hello, ${user.name}!</p>
     <p>Email: ${user.email}</p>
+    <p>Age: ${user.age}</p>
 
 </body>
 </html>
